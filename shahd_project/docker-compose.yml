@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    image: cloud_webb:latest
+    ports:
+      - "8080:80"
+    # Any additional settings to configure the web application
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: ayman1234
+      MYSQL_DATABASE: cloud_database
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ayman1234
